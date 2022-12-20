@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "WeBlog": {
+      "main": "src/WeBlog/main.mo",
+      "type": "motoko"
+    },
+    "WeBlog_frontend": {
+      "dependencies": [
+        "WeBlog"
+      ],
+      "frontend": {
+        "entrypoint": "src/WeBlog_frontend/src/index.html"
+      },
+      "source": [
+        "src/WeBlog_frontend/assets",
+        "dist/WeBlog_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
